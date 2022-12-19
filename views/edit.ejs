@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <a href="/display">Home</a>
+  <div class="main">
+    <h2>Edit students</h2>
+    <div class="form">
+      <form action="" method="POST">
+        <input type="hidden" name="id" value="<%-editList[0].id%>">
+        <input type="text" name="name" value="<%-editList[0].name%>" placeholder="name">
+        <input type="number" name="age" value="<%-editList[0].age%>" placeholder="age">
+        <input type="text" name="usn" value="<%-editList[0].usn%>" placeholder="USN">
+        <input type="number" name="rollnum" value="<%-editList[0].rollnum%>" placeholder="Roll Number">
+        <input type="text" name="department" value="<%-editList[0].department%>" placeholder="Department">
+        <input type="submit" value="submit">
+      </form>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

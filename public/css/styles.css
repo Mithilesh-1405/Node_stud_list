@@ -1,0 +1,23 @@
+form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    margin: 1vh 0vh;
+    width: 70%;
+    border-radius: 1vh;
+    border: solid;
+    border-color: gainsboro;
+}
+.main{
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0vh 0vh 5vh 1px rgb(169, 169, 169);
+    padding: 2vh;
+    margin:0 30%;
+    background-color: blueviolet;
+}
+.form{
+    margin-left: 25%;
+}

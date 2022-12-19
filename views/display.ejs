@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/display.css">
+  <title>Display</title>
+</head>
+
+<body>
+  <a href="/">Home</a>
+  <div class="main">
+    <h2>Students list</h2>
+
+    <% if(list.length==0){ %>
+    <h2>No Records to display</h2>
+    <% }else{%>
+    <table border="3" width="100%">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>USN</th>
+        <th>Roll Number</th>
+        <th>Department</th>
+        <th>Action</th>
+      </tr>
+      <% for(let i=0;i<list.length;i++){ %>
+      <tr>
+        <td>
+          <%-list[i].name%>
+        </td>
+        <td>
+          <%-list[i].age%>
+        </td>
+        <td>
+          <%-list[i].usn%>
+        </td>
+        <td>
+          <%-list[i].rollnum%>
+        </td>
+        <td>
+          <%-list[i].department%>
+        </td>
+        <td><a href="/edit?id=<%-list[i].id%> ">edit</a> <a href="/delete?id=<%-list[i].id%>">delete</a> </td>
+
+      </tr>
+      <% } %>
+
+    </table>
+    <% } %>
+  </div>
+
+</body>
+
+</html>
